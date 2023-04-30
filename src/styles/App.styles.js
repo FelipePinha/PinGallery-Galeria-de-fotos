@@ -6,7 +6,7 @@ export const AppContainer = styled.div`
 `;
 
 export const Header = styled.header`
-    padding: 12px 0;
+    padding: 12px;
 
     span {
         color: #efb6b2;

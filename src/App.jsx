@@ -4,6 +4,7 @@ import * as C from "./styles/App.styles";
 
 // Components import
 import { Title } from "./components/Title/Title";
+import { UploadForm } from "./components/UploadForm/UploadForm";
 
 function App() {
     return (
@@ -15,6 +16,7 @@ function App() {
                     <span>PinGallery</span>
                 </C.Header>
                 <Title />
+                <UploadForm />
             </C.AppContainer>
         </>
     );
