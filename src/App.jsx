@@ -5,6 +5,7 @@ import * as C from "./styles/App.styles";
 // Components import
 import { Title } from "./components/Title/Title";
 import { UploadForm } from "./components/UploadForm/UploadForm";
+import { Gallery } from "./components/Gallery/Gallery";
 
 function App() {
     return (
@@ -17,6 +18,7 @@ function App() {
                 </C.Header>
                 <Title />
                 <UploadForm />
+                <Gallery />
             </C.AppContainer>
         </>
     );
