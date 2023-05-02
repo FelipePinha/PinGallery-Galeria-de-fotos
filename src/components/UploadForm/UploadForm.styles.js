@@ -1,8 +1,12 @@
 import styled from "styled-components";
 
 export const Form = styled.form`
+    width: 100%;
+    padding: 0 12px;
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
 
     input {
         display: none;
@@ -26,4 +30,14 @@ export const Form = styled.form`
             color: #fff;
         }
     }
+`;
+
+export const ErrorCard = styled.div`
+    max-width: 370px;
+    background-color: #efb6b2;
+    color: #fff;
+    padding: 14px;
+    border-radius: 8px;
+    display: ${props => (props.error ? "block" : "none")};
+    position: relative;
 `;

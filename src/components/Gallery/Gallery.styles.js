@@ -5,7 +5,7 @@ export const GallerySection = styled.section`
     margin-top: 30px;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
-    grid-gap: 20px;
+    grid-gap: 15px;
 `;
 
 export const Img = styled.img`
@@ -14,4 +14,10 @@ export const Img = styled.img`
     height: 200px;
     border-radius: 10px;
     margin: 0 auto;
+    cursor: pointer;
+    transition: 0.2s ease-in-out;
+
+    &:hover {
+        transform: scale(1.1);
+    }
 `;
