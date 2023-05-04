@@ -10,7 +10,7 @@ export const GallerySection = styled.section`
 
 export const Img = styled.img`
     width: 100%;
-    max-width: 200px;
+    max-width: 250px;
     height: 200px;
     border-radius: 10px;
     margin: 0 auto;
