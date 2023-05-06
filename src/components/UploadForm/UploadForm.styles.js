@@ -41,3 +41,32 @@ export const ErrorCard = styled.div`
     display: ${props => (props.error ? "block" : "none")};
     position: relative;
 `;
+
+export const submitFormCard = styled.div`
+    max-width: 370px;
+    background-color: #efb6b2;
+    color: #fff;
+    padding: 14px;
+    border-radius: 8px;
+    display: ${props => (props.isSending ? "block" : "none")};
+    position: relative;
+    text-align: center;
+
+    button {
+        min-width: 80px;
+        margin-top: 10px;
+        background-color: transparent;
+        color: #fff;
+        border: 2px solid #fff;
+        border-radius: 1.2rem;
+        padding: 8px;
+        letter-spacing: 1.2px;
+        cursor: pointer;
+        transition: 0.3s ease-in-out;
+
+        &:hover {
+            background-color: #fff;
+            color: #efb6b2;
+        }
+    }
+`;

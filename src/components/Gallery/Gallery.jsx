@@ -27,7 +27,7 @@ export const Gallery = () => {
     return (
         <C.GallerySection>
             {images.map(image => (
-                <C.Img src={url + image.path} alt={image._id} key={image._id} />
+                <C.Img src={url + image.path} alt={image.path.split("_")[1]} key={image._id} />
             ))}
         </C.GallerySection>
     );
