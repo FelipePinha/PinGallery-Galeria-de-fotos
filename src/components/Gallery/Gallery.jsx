@@ -1,10 +1,14 @@
 import { useState, useEffect } from "react";
 import { imagesFetch } from "../../api/config";
 
+// context imports
+import { useContext } from "react";
+import { ImgContext } from "../../context/imgContext";
+
 import * as C from "./Gallery.styles";
 
 export const Gallery = () => {
-    const [images, setImages] = useState([]);
+    const { images, setImages } = useContext(ImgContext);
     const [url, setUrl] = useState("");
 
     const getImages = async () => {

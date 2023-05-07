@@ -2,10 +2,15 @@ import { useState } from "react";
 import { AiOutlinePlus, AiFillCloseCircle } from "react-icons/ai";
 import { imagesFetch } from "../../api/config";
 
+// context imports
+import { useContext } from "react";
+import { ImgContext } from "../../context/imgContext";
+
 // styles import
 import * as C from "./UploadForm.styles";
 
 export const UploadForm = () => {
+    const { images, setImages } = useContext(ImgContext);
     const [file, setFile] = useState(null);
     const [isSending, setIsSending] = useState(false);
     const [error, setError] = useState(false);
@@ -18,12 +23,13 @@ export const UploadForm = () => {
         if (file) {
             const formData = new FormData();
             formData.append("file", file);
-            await imagesFetch.post("/upload", formData);
+            await imagesFetch.post("/upload", formData).then(res => {
+                setImages(res.data.images);
+            });
         }
 
         setFile(null);
         setIsSending(false);
-        window.location.reload(false);
     };
 
     // change selected file function
