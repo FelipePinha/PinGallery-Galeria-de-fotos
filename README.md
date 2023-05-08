@@ -40,5 +40,5 @@ fazer o upload de suas imagens favoritas.
 ## links
 
 <ul>
-  <li><a href="https://github.com/FelipePinha/Pingallery-backend" target="_blank">Código backend</a></li>
+  <li><a href="https://github.com/FelipePinha/Pingallery-backend">Código backend</a></li>
 </ul>
